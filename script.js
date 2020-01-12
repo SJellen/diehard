@@ -354,6 +354,21 @@ const dieHard = [
 
 
 const quote = dieHard[Math.floor(Math.random() * dieHard.length)]
-
-
 console.log(quote)
+
+const $h1 = document.querySelector("h1");
+
+const hue = Math.random() * 360;
+const textTransform = Math.random() > 0.5 ? "lowercase" : "uppercase";
+$h1.innerText = quote;
+$h1.style.setProperty("--hue", hue);
+$h1.style.setProperty("--text-transform", textTransform);
+
+if (hue > 200 && hue < 300) {
+  $h1.style.setProperty("--lumi", "80%");
+}
+
+
+
+
+

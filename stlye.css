@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Archivo:600i&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(./resources/glass.png);
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+h1 {
+    color: hsl(var(--hue), 80%, var(--lumi, 63%));
+    font-family: "Archivo", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow:  2px 2px 0 #000;
+    
+    font-size: 5vw;
+    padding: 0 10vmax;
+}
+
+
